@@ -1,3 +1,6 @@
+# About
+Setup your void linux with suckless tools as dwm, dmenu or st. See [suckless](https://suckless.org/).
+
 # Configure paths
 It is necessary change paths `X11INC` and `X11LIB` in file `config.mk` in each suckless tool.  
 
