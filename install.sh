@@ -37,11 +37,10 @@ sudo xbps-install feh
 mkdir -p $HOME/Pictures/wallpapers
 curl -o ~/julian-calle-practice.jpg  https://cdnb.artstation.com/p/assets/images/images/007/692/529/large/julian-calle-practice2.jpg\?1507877011
 feh --bg-fill $HOME/Pictures/wallpapers/julian-calle-practice.jpg
+sed -i '1i feh --bg-fill $HOME/Pictures/wallpapers/julian-calle-practice.jpg' $HOME/.xinitrc
 
 # set wallpaper when is invoked startx by script
 # echo "feh --bg-fill $HOME/Pictures/wallpapers/julian-calle-practice.jpg" > $HOME/.set_wallpaper
 # chmod u+x $HOME/.set_wallpaper
 # sed -i '1i $HOME/.set_wallpaper' $HOME/.xinitrc
-
-# sed -i '1i feh --bg-fill $HOME/Pictures/wallpapers/julian-calle-practice.jpg' $HOME/.xinitrc
 
