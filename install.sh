@@ -22,6 +22,7 @@ git clone https://git.suckless.org/dwm $HOME/.suckless/dwm
 cd $HOME/.suckless/dwm
 sudo make
 sudo make clean install
+echo "exec dwm" > $HOME/.xinitrc
 
 git clone https://git.suckless.org/dmenu $HOME/.suckless/dmenu
 cd $HOME/.suckless/dmenu
@@ -37,7 +38,7 @@ git clone https://git.suckless.org/st $HOME/.suckless/slstatus
 cd $HOME/.suckless/slstatus
 sudo make
 sudo make clean install
-
+sed -i '1i slstatus &' $HOME/.xinitrc
 
 # install feh - light & fast image viewer and set up wallpapers
 sudo xbps-install feh
