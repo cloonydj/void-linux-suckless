@@ -11,6 +11,9 @@ chsh -s /bin/zsh # for current user
 # install vim
 sudo xbps-install -S vim
 
+# install qutebrowser
+sudo xbps-install qutebrowser 
+
 # WARNING before install dwm you have to change paths in file config.mk
 # from X11INC = /usr/X11R6/include to X11INC = /usr/include/X11
 # from X11LIB = /usr/X11R6/lib to X11LIB = /usr/lib/X11
@@ -35,7 +38,7 @@ sudo xbps-install feh
 
 # Set wallpaper
 mkdir -p $HOME/Pictures/wallpapers
-curl -o ~/julian-calle-practice.jpg  https://cdnb.artstation.com/p/assets/images/images/007/692/529/large/julian-calle-practice2.jpg\?1507877011
+curl -o ~/julian-calle-practice.jpg https://cdnb.artstation.com/p/assets/images/images/007/692/529/4k/julian-calle-practice2.jpg?1507877011 
 feh --bg-fill $HOME/Pictures/wallpapers/julian-calle-practice.jpg
 sed -i '1i feh --bg-fill $HOME/Pictures/wallpapers/julian-calle-practice.jpg' $HOME/.xinitrc
 
