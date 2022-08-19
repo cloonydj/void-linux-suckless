@@ -18,20 +18,26 @@ sudo xbps-install qutebrowser
 # from X11INC = /usr/X11R6/include to X11INC = /usr/include/X11
 # from X11LIB = /usr/X11R6/lib to X11LIB = /usr/lib/X11
 git clone https://git.suckless.org/dwm $HOME/.suckless/dwm
-git clone https://git.suckless.org/dmenu $HOME/.suckless/dmenu
-git clone https://git.suckless.org/st $HOME/.suckless/st
 
 cd $HOME/.suckless/dwm
 sudo make
 sudo make clean install
 
+git clone https://git.suckless.org/dmenu $HOME/.suckless/dmenu
 cd $HOME/.suckless/dmenu
 sudo make
 sudo make clean install
 
+git clone https://git.suckless.org/st $HOME/.suckless/st
 cd $HOME/.suckless/st
 sudo make
 sudo make clean install
+
+git clone https://git.suckless.org/st $HOME/.suckless/slstatus
+cd $HOME/.suckless/slstatus
+sudo make
+sudo make clean install
+
 
 # install feh - light & fast image viewer and set up wallpapers
 sudo xbps-install feh
