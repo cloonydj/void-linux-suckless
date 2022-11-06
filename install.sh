@@ -63,7 +63,7 @@ sudo xbps-install feh
 
 # Set wallpaper
 mkdir -p $HOME/Pictures/wallpapers
-curl -o ~/pengi.jpg https://wallpaperaccess.com/full/981872.jpg 
+curl -o ~/Pictures/wallpapers/pengi.jpg https://wallpaperaccess.com/full/981872.jpg 
 feh --bg-fill $HOME/Pictures/wallpapers/pengi.jpg
 sed -i '1i feh --bg-fill $HOME/Pictures/wallpapers/pengi.jpg' $HOME/.xinitrc
 
