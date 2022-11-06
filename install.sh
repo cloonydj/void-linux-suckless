@@ -17,7 +17,7 @@ sudo xbps-install qutebrowser
 # WARNING before install dwm you have to change paths in file config.mk
 # from X11INC = /usr/X11R6/include to X11INC = /usr/include/X11
 # from X11LIB = /usr/X11R6/lib to X11LIB = /usr/lib/X11
-git clone https://git.suckless.org/dwm $HOME/.suckless/dwm
+git clone https://github.com/cloonydj/dwm $HOME/.suckless/dwm
 
 cd $HOME/.suckless/dwm
 sudo make
@@ -45,12 +45,12 @@ sudo xbps-install feh
 
 # Set wallpaper
 mkdir -p $HOME/Pictures/wallpapers
-curl -o ~/julian-calle-practice.jpg https://cdnb.artstation.com/p/assets/images/images/007/692/529/4k/julian-calle-practice2.jpg?1507877011 
-feh --bg-fill $HOME/Pictures/wallpapers/julian-calle-practice.jpg
-sed -i '1i feh --bg-fill $HOME/Pictures/wallpapers/julian-calle-practice.jpg' $HOME/.xinitrc
+curl -o ~/pengi.jpg https://wallpaperaccess.com/full/981872.jpg 
+feh --bg-fill $HOME/Pictures/wallpapers/pengi.jpg
+sed -i '1i feh --bg-fill $HOME/Pictures/wallpapers/pengi.jpg' $HOME/.xinitrc
 
 # set wallpaper when is invoked startx by script
-# echo "feh --bg-fill $HOME/Pictures/wallpapers/julian-calle-practice.jpg" > $HOME/.set_wallpaper
+# echo "feh --bg-fill $HOME/Pictures/wallpapers/pengi.jpg" > $HOME/.set_wallpaper
 # chmod u+x $HOME/.set_wallpaper
 # sed -i '1i $HOME/.set_wallpaper' $HOME/.xinitrc
 
