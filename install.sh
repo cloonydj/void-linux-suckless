@@ -3,16 +3,22 @@ sudo xbps-install -Suv
 sudo xbps-install base-devel libX11-devel libXft-devel libXinerama-devel freetype-devel fontconfig-devel
 
 # set zsh as default
-sudo xbps-install -S zsh
-sudo chsh -s /bin/zsh # for root
+# sudo xbps-install -S zsh
+# sudo chsh -s /bin/zsh # for root
 # sudo chsh -s $(which zsh)
-chsh -s /bin/zsh # for current user
+# chsh -s /bin/zsh # for current user
 
 # install vim
-sudo xbps-install -S vim
+# sudo xbps-install -S vim
+
+# install nano
+sudo xbps-install nano
 
 # install qutebrowser
-sudo xbps-install qutebrowser 
+# sudo xbps-install qutebrowser 
+
+# install firefox
+sudo xbps-install firefox
 
 # WARNING before install dwm you have to change paths in file config.mk
 # from X11INC = /usr/X11R6/include to X11INC = /usr/include/X11
