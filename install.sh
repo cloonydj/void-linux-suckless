@@ -8,6 +8,18 @@ sudo xbps-install base-devel libX11-devel libXft-devel libXinerama-devel freetyp
 # sudo chsh -s $(which zsh)
 # chsh -s /bin/zsh # for current user
 
+# install uxterm
+sudo xbps-install xterm
+
+# install thunar
+sudo xbps-install thunar
+
+# install xarchiver
+sudo xbps-install xarchiver
+
+# install rofi
+sudo xbps-install rofi
+
 # install vim
 # sudo xbps-install -S vim
 
